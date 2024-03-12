@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Gallery</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="product">
+        <div class="produc-small-img">
+            <img src="./images/1.jpg" onclick="myfunction(this)">
+            <img src="./images/2.jpg" onclick="myfunction(this)">
+            <img src="./images/3.jpg" onclick="myfunction(this)">
+            <img src="./images/4.jpg" onclick="myfunction(this)">
+            <img src="./images/5.jpg" onclick="myfunction(this)">
+        </div>
+        <div class="img-container">
+            <img src="./images/1.jpg" id="mainImage">
+        </div>
+    </div>
+
+
+    <script>
+        function myfunction(getImage){
+            let fullImage = document.getElementById("mainImage");
+            fullImage.src = getImage.src;
+        }
+    </script>
+</body>
+</html>
